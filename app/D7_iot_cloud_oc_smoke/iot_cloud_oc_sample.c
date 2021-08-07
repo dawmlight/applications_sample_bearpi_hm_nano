@@ -261,7 +261,7 @@ static int SensorTaskEntry(void)
     E53SF1Init();
     /****传感器校准****/
     usleep(1000000);       // 开机1s后进行校准
-    MQ2_PPM_Calibration(); // 校准传感器
+    MQ2PPMCalibration(); // 校准传感器
     while (1) {
         ret = GetMQ2PPM(&ppm);
         if (ret != 0) {

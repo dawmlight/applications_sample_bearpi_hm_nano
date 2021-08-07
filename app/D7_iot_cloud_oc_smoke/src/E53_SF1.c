@@ -46,7 +46,25 @@ void E53SF1Init(void)
     IoTGpioSetDir(WIFI_IOT_IO_NAME_GPIO_8, IOT_GPIO_DIR_OUT);                  //设置GPIO_8引脚为输出模式
     IoTPwmInit(WIFI_IOT_PWM_PORT_PWM1);                                        //初始化PWM1端口
 }
+/***************************************************************
+* 函数名称: GetVoltage
+* 说    明: 获取电压值函数
+* 参    数: 无
+*								
+* 返 回 值: 无
+***************************************************************/
+static float GetVoltage(void)
+{
+    unsigned int ret;
+    unsigned short data;
 
+    ret = IoTAdcRead(5, &data, IOT_ADC_EQU_MODEL_8, IOT_ADC_CUR_BAIS_DEFAULT, 0xff);
+    if (ret != IOT_SUCCESS)
+    {
+        printf("ADC Read Fail\n");
+    }
+    return (float)data * 1.8 * 4 / 4096.0;
+}
 /***************************************************************
  * 函数名称: GetMQ2PPM
  * 说    明: 获取PPM函数
@@ -57,7 +75,7 @@ int GetMQ2PPM(float* ppm)
 {
     unsigned int ret;
     unsigned short data;
-    float voltage, RS, ppm;
+    float voltage, RS;
 
     ret = IoTAdcRead(5, &data, IOT_ADC_EQU_MODEL_8, IOT_ADC_CUR_BAIS_DEFAULT, 0xff);
     if (ret != 0) {

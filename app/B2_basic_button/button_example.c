@@ -57,12 +57,14 @@ static void ButtonExampleEntry(void)
 
     // init gpio of F1 key and set it as the falling edge to trigger interrupt
     IoTGpioInit(BUTTON_F1_GPIO);
+    IoTGpioSetFunc(BUTTON_F1_GPIO, IOT_GPIO_FUNC_GPIO_11_GPIO);
     IoTGpioSetDir(BUTTON_F1_GPIO, IOT_GPIO_DIR_IN);
     IoTGpioSetPull(BUTTON_F1_GPIO, IOT_GPIO_PULL_UP);
     IoTGpioRegisterIsrFunc(BUTTON_F1_GPIO, IOT_INT_TYPE_EDGE, IOT_GPIO_EDGE_FALL_LEVEL_LOW, F1Pressed, NULL);
 
     // init gpio of F2 key and set it as the falling edge to trigger interrupt
     IoTGpioInit(BUTTON_F2_GPIO);
+    IoTGpioSetFunc(BUTTON_F2_GPIO, IOT_GPIO_FUNC_GPIO_12_GPIO);
     IoTGpioSetDir(BUTTON_F2_GPIO, IOT_GPIO_DIR_IN);
     IoTGpioSetPull(BUTTON_F2_GPIO, IOT_GPIO_PULL_UP);
     IoTGpioRegisterIsrFunc(BUTTON_F2_GPIO, IOT_INT_TYPE_EDGE, IOT_GPIO_EDGE_FALL_LEVEL_LOW, F2Pressed, NULL);

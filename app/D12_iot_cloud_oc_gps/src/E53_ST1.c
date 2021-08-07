@@ -83,7 +83,7 @@ void E53ST1Init(void)
     IoTGpioSetDir(7, IOT_GPIO_DIR_OUT); //设置GPIO_7为输出模式
     IoTGpioSetOutputVal(7, 0);
 
-    GPS_Init();
+    GPSInit();
 }
 
 /***************************************************\
