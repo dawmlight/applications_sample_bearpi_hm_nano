@@ -18,5 +18,6 @@ static_library("button_example") {
 
     include_dirs = [
         "//base/iot_hardware/peripheral/interfaces/kits",
+        "//device/bearpi/bearpi_hm_nano/iot_hardware_hals/include",
     ]
 }

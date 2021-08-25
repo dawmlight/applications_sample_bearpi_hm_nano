@@ -26,6 +26,7 @@ static_library("oc_mqtt") {
     
     include_dirs = [
         "//base/iot_hardware/peripheral/interfaces/kits",
+        "//device/bearpi/bearpi_hm_nano/iot_hardware_hals/include",
         "//foundation/communication/wifi_lite/interfaces/wifiservice",
         "//third_party/cJSON",
         "//third_party/paho_mqtt/MQTTPacket/src",

@@ -24,6 +24,7 @@ static_library("cloud_oc_manhole_cover") {
     
     include_dirs = [
         "//base/iot_hardware/peripheral/interfaces/kits",
+        "//device/bearpi/bearpi_hm_nano/iot_hardware_hals/include",
         "//foundation/communication/wifi_lite/interfaces/wifiservice",
         "//third_party/cJSON",
         "//third_party/iot_link/oc_mqtt/oc_mqtt_al",
