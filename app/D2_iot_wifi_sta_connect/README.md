@@ -213,7 +213,7 @@ static BOOL WifiStaTask(void)
         osDelay(100);
     }
 
-    //执行其他操作
+    //执行其余操作
     for(;;) {
         osDelay(100);
     }

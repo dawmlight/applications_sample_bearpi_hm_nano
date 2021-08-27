@@ -26,6 +26,7 @@ static_library("i2c_example") {
     cflags += [ "-Wno-unused-parameter" ]
     include_dirs = [
         "//base/iot_hardware/peripheral/interfaces/kits",
+        "//device/bearpi/bearpi_hm_nano/iot_hardware_hals/include",
         "nfc/ndef",
         "nfc/ndef/rtd/",
         "nfc"
