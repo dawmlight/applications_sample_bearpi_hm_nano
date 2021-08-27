@@ -24,7 +24,7 @@
     - 下载地址：https://code.visualstudio.com
 ## 三、开始部署环境
 
-1. 解压百度云下载的鸿蒙`Ubuntu18.4镜像OVF.zip`文件到某个目录。
+1. 解压百度云下载的OpenHarmony`Ubuntu18.4镜像OVF.zip`文件到某个目录。
 
     ![](figures/Ubuntu18.4镜像目录.png)
 
@@ -44,7 +44,7 @@
  
     ![](figures/开启ubuntu虚拟机.png)
     
-6. 此时虚拟机进入登录界面，点击`HarmonyOS`
+6. 此时虚拟机进入登录界面，点击用户头像
 
     ![](figures/虚拟机登录页面.png)
 

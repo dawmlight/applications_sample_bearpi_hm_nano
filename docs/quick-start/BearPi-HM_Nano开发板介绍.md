@@ -3,7 +3,7 @@
 本文档介绍BearPi-HM_Nano开发板外观、功能、资源及参数规格，通过学习，开发者会对BearPi-HM_Nano开发板有初步认识，并可上手业务开发。
 
 ## 开发板简介<a name="section187215231809"></a>
-BearPi-HM_Nano开发板是一块专门为鸿蒙OS设计的鸿蒙OS开发板，板载高度集成的2.4GHz WLAN SoC芯片Hi3861，并板载NFC电路及标准的E53接口，标准的E53接口可扩展智能加湿器、智能台灯、智能安防、智能烟感等案例
+BearPi-HM_Nano开发板是一块专门为OpenHarmony设计的开发板，板载高度集成的2.4GHz WLAN SoC芯片Hi3861，并板载NFC电路及标准的E53接口，标准的E53接口可扩展智能加湿器、智能台灯、智能安防、智能烟感等案例
 ### 购买地址 [点击购买](https://item.taobao.com/item.htm?id=633296694816)
 ### 视频教程地址 [点击观看](https://space.bilibili.com/470797387/channel/detail?cid=161760)
 
