@@ -28,7 +28,7 @@ osMutexId_t osMutexNew(const osMutexAttr_t *attr)
 osStatus_t osMutexAcquire(osMutexId_t mutex_id,uint32_t timeout)
 ```
 **描述：**
-函数osMutexAcquire一直等待，直到参数mutex_id指定的互斥对象可用为止。如果没有其他线程获得互斥锁，该函数立即返回并阻塞互斥锁对象。
+函数osMutexAcquire一直等待，直到参数mutex_id指定的互斥对象可用为止。如果没有其余线程获得互斥锁，该函数立即返回并阻塞互斥锁对象。
 
 > **注意** :不能在中断服务调用该函数
 
@@ -46,7 +46,7 @@ osStatus_t osMutexAcquire(osMutexId_t mutex_id,uint32_t timeout)
 osStatus_t osMutexRelease(osMutexId_t mutex_id)
 ```
 **描述：**
-函数osMutexRelease释放一个由参数mutex_id指定的互斥量。当前等待这个互斥锁的其他线程将被置于就绪状态。
+函数osMutexRelease释放一个由参数mutex_id指定的互斥量。当前等待这个互斥锁的其余线程将被置于就绪状态。
 
 > **注意** :不能从中断服务例程调用此函数。
 

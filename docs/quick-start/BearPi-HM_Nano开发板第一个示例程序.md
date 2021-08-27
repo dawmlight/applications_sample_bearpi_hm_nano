@@ -60,7 +60,7 @@ bugfix和新增业务两种情况，涉及源码修改。下面以新增业务�
 
 4.  编写模块BUILD.gn文件，指定需参与构建的特性模块。
 
-    配置`./applications/sample/bearpi_hm_nano/app/BUILD.gn`文件，在features字段中增加索引`"my_first_app:myapp"`，使目标模块参与编译。并屏蔽其他模块。
+    配置`./applications/sample/bearpi_hm_nano/app/BUILD.gn`文件，在features字段中增加索引`"my_first_app:myapp"`，使目标模块参与编译。并屏蔽其余模块。
 
     ```
         #"D1_iot_wifi_scan:wifi_scan",
